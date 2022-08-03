@@ -1,0 +1,29 @@
+
+@mixin scrolling-settings($height: 550px)
+  overflow-y: scroll
+  height: $height
+
+*
+  padding: 0
+  margin: 0
+  
+.logo
+  text-align: center
+  margin-top: 1%
+
+.update-btn
+  margin-left: 20px
+
+.scrolling
+  @include scrolling-settings
+
+.total-alert
+  margin-top: 15px
+
+  .total-text
+  font-size: 20px
+  font: bold
+
+.total-text-sum
+  font-size: 30px
+  font: bold
