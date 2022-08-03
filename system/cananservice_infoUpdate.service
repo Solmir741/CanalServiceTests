@@ -1,0 +1,13 @@
+[Unit]
+Description=Test daemon
+After=syslog.target
+
+[Service]
+Type=simple
+User=solmir
+Group=solmir
+WorkingDirectory=/var/www/investpn/employment_tests/
+ExecStart=/home/solmir/venv3/bin/python3 infoUpdate.py
+
+[Install]
+WantedBy=multi-user.target
